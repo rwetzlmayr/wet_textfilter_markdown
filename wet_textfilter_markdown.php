@@ -13,6 +13,15 @@ if (txpinterface == 'admin')
 		{
 			return Markdown($thing);
 		}
+
+		public function help()
+		{
+			return
+				n.'<ul class="plain-list">'.
+				n.'<li><a href="http://daringfireball.net/projects/markdown/basics">Markdown: Basics</a></li>'.
+				n.'<li><a href="http://daringfireball.net/projects/markdown/syntax">Markdown: Syntax</a></li>'.
+				n.'</ul>';
+		}
 	}
 	new wet_textfilter_markdown();
 
