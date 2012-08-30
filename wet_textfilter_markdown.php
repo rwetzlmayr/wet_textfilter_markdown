@@ -1,4 +1,36 @@
 <?php
+$plugin['version'] = '0.1';
+$plugin['author'] = 'Robert Wetzlmayr';
+$plugin['author_uri'] = 'http://wetzlmayr.com/';
+$plugin['description'] = 'Markdown textfilter';
+
+// Plugin 'type' defines where the plugin is loaded
+// 0 = public       : only on the public side of the website (default)
+// 1 = public+admin : on both the public and non-AJAX admin side
+// 2 = library      : only when include_plugin() or require_plugin() is called
+// 3 = admin        : only on the non-AJAX admin side
+// 4 = admin+ajax   : only on admin side
+// 5 = public+admin+ajax   : on both the public and admin side
+$plugin['type'] = 4;
+
+if (!defined('txpinterface'))
+	@include_once('zem_tpl.php');
+
+if (0) {
+	?>
+# --- BEGIN PLUGIN HELP ---
+
+h2.  Markdown textfilter for Textpattern 4.6+
+
+Textfilters transform text entered into the article's bodies and excerpts into the final HTML.
+
+Textpattern supports Textile and nl2br out of the box. This plugin extends Textpatterns capabilities by adding Markdown to the filter set.
+
+# --- END PLUGIN HELP ---
+<?php
+}
+
+# --- BEGIN PLUGIN CODE ---
 if (txpinterface == 'admin')
 {
 	class wet_textfilter_markdown extends Textfilter implements ITextfilter
@@ -1759,3 +1791,4 @@ if (!is_callable('Markdown')) {
 }
 }
 
+# --- END PLUGIN CODE ---
