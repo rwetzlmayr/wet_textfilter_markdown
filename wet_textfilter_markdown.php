@@ -1,16 +1,8 @@
 <?php
-$plugin['version'] = '0.1';
+$plugin['version'] = '0.2';
 $plugin['author'] = 'Robert Wetzlmayr';
 $plugin['author_uri'] = 'http://wetzlmayr.com/';
 $plugin['description'] = 'Markdown textfilter';
-
-// Plugin 'type' defines where the plugin is loaded
-// 0 = public       : only on the public side of the website (default)
-// 1 = public+admin : on both the public and non-AJAX admin side
-// 2 = library      : only when include_plugin() or require_plugin() is called
-// 3 = admin        : only on the non-AJAX admin side
-// 4 = admin+ajax   : only on admin side
-// 5 = public+admin+ajax   : on both the public and admin side
 $plugin['type'] = 4;
 
 if (!defined('txpinterface'))
@@ -41,9 +33,9 @@ if (txpinterface == 'admin')
 			$this->version = '0.1';
 		}
 
-		public function filter($options, $thing)
+		public function filter($thing, $options)
 		{
-			parent::filter($options, $thing);
+			parent::filter($thing, $options);
 			return Markdown($thing);
 		}
 
