@@ -41,8 +41,9 @@ if (txpinterface == 'admin')
 			$this->version = '0.1';
 		}
 
-		public function filter($atts, $thing)
+		public function filter($options, $thing)
 		{
+			parent::filter($options, $thing);
 			return Markdown($thing);
 		}
 
