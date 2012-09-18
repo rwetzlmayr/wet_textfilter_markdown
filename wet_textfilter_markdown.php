@@ -30,16 +30,16 @@ if (txpinterface == 'admin')
 		function __construct()
 		{
 			parent::__construct('wet_markdown', gTxt('Markdown'));
-			$this->version = '0.1';
+			$this->version = '0.2';
 		}
 
-		public function filter($thing, $options)
+		function filter($thing, $options)
 		{
 			parent::filter($thing, $options);
 			return Markdown($thing);
 		}
 
-		public function help()
+		function help()
 		{
 			return
 				n.'<ul class="plain-list">'.
