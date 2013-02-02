@@ -30,9 +30,9 @@ Nam tincidunt rhoncus urna. Aliquam id massa ut nibh bibendum imperdiet.
 Curabitur neque mauris, porta vel, lacinia quis, placerat ultrices,
 orci.
 
-This text has a reference in the [footnote] [1].
+This text has a reference in the [^1].
 
-[1]: Here is the footnote.
+[^1]: Here is the footnote.
 
 ### Addresses
 
@@ -136,7 +136,7 @@ Embedded content
 
 ![Alt text](http://placehold.it/160/fabc2b/333333  "Alt text")
 
-### Left ranged image (won't work with Markdown alone)
+### Left ranged image (won't work with Markdown)
 
 Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis
 sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum
@@ -157,7 +157,7 @@ arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam
 lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel
 ligula. Sed felis.
 
-### Right ranged image (won't work with Markdown alone)
+### Right ranged image (won't work with Markdown)
 
 Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis
 sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum
@@ -178,7 +178,7 @@ arcu. Vestibulum consequat nisi a ipsum vulputate vehicula. Aliquam
 lacus diam, ultricies vel, interdum eget, posuere non, tellus. Donec vel
 ligula. Sed felis.
 
-### Centred image (won't work with Markdown alone)
+### Centred image (won't work with Markdown)
 
 Aenean vehicula posuere neque. Nam nibh lectus, laoreet non, convallis
 sed, vulputate consectetuer, enim. Pellentesque arcu. Vestibulum
@@ -214,30 +214,20 @@ Lists
     -   and a second level
     -   bulletpoint list example
 
-<dl>
-	<dt>This is a definition list term 1 (won't work with Markdown alone)</dt>
-	<dd>Definition of term 1 here</dd>
-	<dd>Another definition of term 1
-	<dl>
-		<dt>A sub term</dt>
-			<dd>With</dd>
-			<dd>Subs</dd>
-	</dl>
-	</dd>
-</dl>
+This is a definition list term 1
+:    Definition of term 1 here
+:    Another definition of term 1
+:    A sub term
+:    With
+:    Subs
 
-Tables (won't work with Markdown alone)
+Tables
 ------
 
-Table with `<caption>`, `<thead>` and `<tfoot>` included.
+Table with `<thead>`  included.
 
-  ---------------------------- ----------------------- ----------------- ---------------- ----------------
-  =. This is a table caption   \^.                     \_. Planet        \_. Population   \_. Government
-  \~.                          \3. This is the tfoot
-  -.                           Diso                    4.1 B             Democracy
-  Lave                         2.5 B                   Dictatorship
-  Leesti                       5.0 B                   Corporate State
-  Reorte                       3.1 B                   Dictatorship
-  Zaonce                       5.3 B                   Corporate State
-  ---------------------------- ----------------------- ----------------- ---------------- ----------------
-
+| Item      | Value |
+| --------- | -----:|
+| Computer  | $1600 |
+| Phone     |   $12 |
+| Pipe      |    $1 |
