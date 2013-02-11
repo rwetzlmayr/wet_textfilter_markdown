@@ -1,5 +1,5 @@
 <?php
-$plugin['version'] = '0.2';
+$plugin['version'] = '0.3';
 $plugin['author'] = 'Robert Wetzlmayr';
 $plugin['author_uri'] = 'http://wetzlmayr.com/';
 $plugin['description'] = 'Markdown textfilter';
@@ -16,7 +16,7 @@ h2.  Markdown textfilter for Textpattern 4.6+
 
 Textfilters transform text entered into the article's bodies and excerpts into the final HTML.
 
-Textpattern supports Textile and nl2br out of the box. This plugin extends Textpatterns capabilities by adding Markdown to the filter set.
+Textpattern supports Textile and nl2br out of the box. This plugin extends Textpattern's capabilities by adding Markdown to the filter set.
 
 # --- END PLUGIN HELP ---
 <?php
@@ -25,12 +25,12 @@ Textpattern supports Textile and nl2br out of the box. This plugin extends Textp
 # --- BEGIN PLUGIN CODE ---
 if (txpinterface == 'admin')
 {
-	class wet_textfilter_markdown extends Textfilter implements ITextfilter
+	class Wet_Textfilter_Markdown extends Textpattern_Textfilter_Base implements Textpattern_Textfilter_Interface
 	{
 		function __construct()
 		{
 			parent::__construct('wet_markdown', gTxt('Markdown'));
-			$this->version = '0.2';
+			$this->version = '0.3';
 		}
 
 		function filter($thing, $options)
@@ -48,7 +48,7 @@ if (txpinterface == 'admin')
 				n.'</ul>';
 		}
 	}
-	new wet_textfilter_markdown();
+	new Wet_Textfilter_Markdown();
 
 if (!is_callable('Markdown')) {
 #
