@@ -1,5 +1,5 @@
-h2.  Markdown textfilter for Textpattern 4.6+
+h2.  Markdown Extra textfilter for Textpattern 4.6+
 
 Textfilters transform text entered into the article's bodies and excerpts into the final HTML.
 
-Textpattern supports Textile and nl2br out of the box. This plugin extends Textpatterns capabilities by adding Markdown to the filter set.
+Textpattern supports Textile and nl2br out of the box. This plugin extends Textpatterns capabilities by adding Markdown Extra to the filter set.
