@@ -1,12 +1,12 @@
 <?php
-$plugin['version'] = '0.4';
+$plugin['version'] = '0.5';
 $plugin['author'] = 'Robert Wetzlmayr';
 $plugin['author_uri'] = 'http://wetzlmayr.com/';
 $plugin['description'] = 'Markdown Extra textfilter';
 $plugin['type'] = 4;
 
 if (!defined('txpinterface'))
-	@include_once('zem_tpl.php');
+	include_once('zem_tpl.php');
 
 if (0) {
 ?>
@@ -39,7 +39,7 @@ if (txpinterface == 'admin')
 			return Markdown($thing);
 		}
 
-		function help()
+		function getHelp()
 		{
 			return
 				n.'<ul class="plain-list">'.
