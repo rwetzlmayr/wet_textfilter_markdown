@@ -25,7 +25,7 @@ Textpattern supports Textile and nl2br out of the box. This plugin extends Textp
 # --- BEGIN PLUGIN CODE ---
 if (txpinterface == 'admin')
 {
-	class Wet_Textfilter_Markdown extends Textpattern_Textfilter_Base implements Textpattern_Textfilter_Interface
+	class Wet_Textfilter_Markdown extends \Textpattern\Textfilter\Base implements \Textpattern\Textfilter\TextfilterInterface
 	{
 		function __construct()
 		{
