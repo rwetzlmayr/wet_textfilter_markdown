@@ -1,7 +1,7 @@
 <?php
 
 namespace {
-    $plugin['version'] = '0.6';
+    $plugin['version'] = '0.7';
     $plugin['author'] = 'Robert Wetzlmayr';
     $plugin['author_uri'] = 'http://wetzlmayr.com/';
     $plugin['description'] = 'Markdown Extra textfilter';
@@ -68,6 +68,9 @@ namespace {
 }
 
 namespace erusev {
+
+    use \DOMDocument;
+
     if (!class_exists(__NAMESPACE__.'\Parsedown')) {
 
 #
