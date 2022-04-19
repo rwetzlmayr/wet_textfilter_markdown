@@ -1,7 +1,7 @@
 <?php
 
 namespace {
-    $plugin['version'] = '0.7';
+    $plugin['version'] = '0.8';
     $plugin['author'] = 'Robert Wetzlmayr';
     $plugin['author_uri'] = 'http://wetzlmayr.com/';
     $plugin['description'] = 'Markdown Extra textfilter';
