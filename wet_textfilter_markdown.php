@@ -35,10 +35,10 @@ namespace Wet\Textfilter {
     {
         function __construct()
         {
-            global $plugin;
+            global $plugin, $plugins_ver, $txp_current_plugin;
 
             parent::__construct('wet_markdown', gTxt('Markdown Extra'));
-            $this->version = $plugin['version'];
+            $this->version = (isset($plugin)) ? $plugin['version'] : $plugins_ver[$txp_current_plugin];
         }
 
         function filter($thing, $options)
