@@ -1,5 +1,5 @@
-h2.  Markdown Extra textfilter for Textpattern 4.6+
+h1. 301 Moved Permanently
 
-Textfilters transform text entered into the article's bodies and excerpts into the final HTML.
+The repository has been moved to https://codeberg.org/rwetzlmayr/wet_textfilter_markdown.
 
-Textpattern supports Textile and nl2br out of the box. This plugin extends Textpatterns capabilities by adding Markdown Extra to the filter set.
+This page is left as a placeholder to guide users to the new location.
